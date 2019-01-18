@@ -22,7 +22,15 @@ def temp():
 
 
 def lum():
-  print("no")
+  r = input("What is the radius of the star?")
+  t = input("What is the temperature of the star?")
+  Lum1 = float(r) ** 2
+  Lum = Lum1 * 4 * math.pi * (5.67 * (10 ** -8))
+  Lum2 = float(t) ** 4
+  LumWatts = Lum2 * Lum
+  SolarUnit = 2.61 * (10 ** -27)
+  LumSolar = LumWatts * SolarUnit
+  print("The luminosity of the planet is {} Watts, or {} Solar Luminosities." .format(LumWatts, LumSolar))
 
 
 def start():
