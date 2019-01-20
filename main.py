@@ -1,8 +1,10 @@
 # This will do my physics homeowork.
 import math 
 
+# Function for solving for temperature of planets.
 def temp():
   print("Is the star you're using the sun?")
+  # Asks this so it can provide default values if you're using the sun as the star to compare the planet to.
   sun = input("Type 'yes' or 'no:")
   if sun == "yes":
     ts = 5778
