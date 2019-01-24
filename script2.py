@@ -8,7 +8,8 @@ import math
 
 def period():
   t = (input("What is the period of the stars orbit, in days?"))
-  return float(t)
+  l = t/365
+  return float(l)
 
 def radius():
   hey = input("What is the radius of the star, in relation to the sun?")
